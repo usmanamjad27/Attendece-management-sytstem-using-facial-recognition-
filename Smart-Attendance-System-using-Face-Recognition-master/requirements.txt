@@ -1,0 +1,39 @@
+# Core dependencies for Smart Attendance System
+# Install with: pip install -r requirements.txt
+
+# Image processing
+Pillow>=9.0.0
+opencv-python>=4.5.0
+dlib>=19.22.0
+
+# Machine Learning & Deep Learning
+numpy>=1.21.0
+tensorflow>=2.8.0
+keras>=2.8.0
+h5py>=3.6.0
+scikit-learn>=1.0.0
+
+# Database
+pymongo>=4.0.0
+
+# Data processing
+pandas>=1.3.0
+
+# GUI (usually included with Python, but listed for completeness)
+# tkinter is part of Python standard library
+
+# Audio (optional, for text-to-speech if needed)
+pyttsx3>=2.90
+
+# Note: datetime is part of Python standard library
+# Note: pygame is optional and not used in core functionality
+
+
+
+
+
+
+
+
+
+
