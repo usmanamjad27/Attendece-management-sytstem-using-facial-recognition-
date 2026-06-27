@@ -66,11 +66,8 @@ Diving deep into the process:
 4. After the students are enrolled in Mongo they are appended in a CSV file "Student_Enrollment.CSV"(This file is important as the number of classes in Recognizer are derived from here)<br/>
 5. Then, the names folders/directories are created in the people folder with "roll number"+"name" format<br/>
 
-![alt text](images/8.png)<br/>
 6. Faces of students are detected in real-time using Harcascade classifier in OpenCV2 (Faces.xml)<br/>
 7. The pictures are stored in increasing digits order( 30 Pictures per person are taken as of now)<br/>
-
-![alt text](images/9.png)<br/>
 
 8. After taking 30 images the window(frame) is automatically destroyed<br/>
 9. Following the above steps, new students can be enrolled<br/>
