@@ -89,29 +89,23 @@ Diving deep into the process:
 8. I have used Adam optimizer and the following are the layers:
 	1. Input layer 128 Neurons followed by Relu Activation
 	2. 3 Hidden layers with 64, 32 and 16 neurons respectively
-	3. Output Layer with Softmax Activation<br/>
-![alt text](images/10.png)<br/>
-9. The model takes around 30-40 seconds for training and saved as "Face_recoginition. Model" in the Model directory<br/>
-![alt text](images/11.png)<br/>
+	3. Output Layer with Softmax Activation
+9. The model takes around 30-40 seconds for training and saved as "Face_recoginition. Model" in the Model directon
 
 
 
 # - **Face Recognition/ Take Attendance**
-1. On clicking the class (Hindi/English) Radiobutton, you can click on Take attendance
-![alt text](images/12.png)<br/>
-
+1. On clicking the class (Hindi/English) Radiobutton, you can click on Take att
 2. The control is shifted to Recognition() function in Recognizer.py
 3. The labels are created in a dictionary with value 0 for all the names of students(names are extracted from people folder)
 4. Then a window is popped which detects the face in realtime with the same CV2 haar cascade classifier followed by extraction of embeddings <br/>
-![alt text](images/13.png)<br/>
 5. If the output value is more than 0.85(hardcoded) then a respective class is matched against that value.<br/>
 6. I have created an empty dictionary initializing 0 values for all the students. Every time the face is matched with the label the value is incremented by 1 value. Once this value reached to 30(hardcoded) "Attendance is completed" is displayed on the header of the frame<br/>
-![alt text](images/14.png)<br/>
+
 7. When the threshold reaches 30, for all the present students the data is updated in MongoDB table using Data.update
 8. For MongoDB, the control is shifted to retrieve_pymongo_data.py where the Database and collections are pulled based on the subject and updated
 9. Export CSV function saves the MongoDB data to CSV files for English and Hindi folders respectively.<br/>
-![alt text](images/15.png)<br/>
-![alt text](images/16.png)<br/>
+
 10. "q" key on the keyboard can be used to exit the window.<br/>
 11. Quit can be used to exit the Tkinter UI.<br/>
 
